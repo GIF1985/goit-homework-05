@@ -50,8 +50,8 @@ body {
 
 
 ul {
-  padding: 0; /* устанавливает внутренние отступы/поля со всех сторон */
-  margin: 0%;
+  padding: 0; /* внутренние отступы/поля со всех сторон */
+  margin: 0%; /* внешние отступы/поля со всех сторон */
   list-style: none; /* оформление ul отменил */
 }
 
@@ -91,36 +91,36 @@ ul {
   align-items: center; /* задает выравнивание элементов по центру*/
 }
 
-  .menu{
-    display: flex;
-  }
+.menu{
+  display: flex;
+}
   
-  .menu .item {
-    margin-right: 40px;
-  }
+.menu .item {
+  margin-right: 40px;
+}
   
-  .menu .item:last-child{
-    margin: 0;
-  }
+.menu .item:last-child{
+  margin: 0;
+}
   
-  .menu-link {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    display: block;  
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+.menu-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: block;  
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
-  .menu-link:hover,.menu-link:focus{
+.menu-link:hover,.menu-link:focus{
   color:var(--logo-color);
-  }
+}
   
-  .techno{
+.techno{
     max-width: 264px;
-  }
+}
 
 .menu-current {
   color:var(--logo-color);
@@ -161,12 +161,14 @@ ul {
     color:var(--logo-color);
   }
 
-
-
-
- /* hero */
+  
+/**
+  |============================
+  | hero
+  |============================
+*/
  .hero{
-    text-align: center;
+    text-align: center;  /* Центриуерм текст */
     padding-top: 188px;
     padding-bottom: 188px;
     background-color: var(--primary-text-color);
@@ -178,9 +180,6 @@ ul {
     background-repeat:no-repeat;
     background-size: cover;
 }
-
-
-  
 
   .hero-title{
     margin-top: 0;
@@ -210,20 +209,22 @@ ul {
     background-color: var(--зressed-ocean);
   }
 
+ /**
+   |============================
+   | section 
+   |============================
+ */
 
-  /* section */
   .smart{
     padding-bottom: 120px;
   }
 
-   .advantages{
+.advantages{
   display: flex;
   padding: 0;
   margin: 0; 
-  
-
   text-align: left;
-  } 
+ } 
 
   .advantages .item{
     margin-right: 24px;
@@ -324,7 +325,6 @@ ul {
 .item .photo-tim {
   display: flex;
   text-align: center;
-  
 }
 
 .tim .item{
@@ -332,7 +332,6 @@ ul {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   max-width: 264px;
-  
 }
 
 .tim .item:last-child{
@@ -340,10 +339,7 @@ ul {
 }
 
 .tim .tim-box{
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 32px 16px 32px 16px;
 }
 
 .section-tim{
