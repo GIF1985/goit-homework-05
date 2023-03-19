@@ -12,11 +12,18 @@
   --footer-color:#E7E9FC;
   --зressed-ocean:#404BBF;
   --light-silvr-color:#8E8F99;
+  --box-shadow-te: 
+  0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
+
 
 /**
   |===========================================
-  | делаем невидимым текст например имя секции 
+  | делаем невидимым текст например оглавления секции 
   |===========================================
 */
 .visually-hidden {
@@ -62,7 +69,7 @@ ul {
 */
 .page-header{
   background-color: var(--white-color);
-  border-bottom: 1px solid #E7E9FC ;
+  border-bottom: 1px solid var(--footer-color) ;
 }
 
 
@@ -175,12 +182,14 @@ ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url("../images/people.png");
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
+    background-image: 
+    linear-gradient( rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7) ),
+      url("../images/people.png");
 }
-
   .hero-title{
     margin-top: 0;
     margin-bottom: 48px;
@@ -334,7 +343,7 @@ ul {
 
 .team .item{
   margin-right: 24px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: var(--box-shadow-te);
   border-radius: 0px 0px 4px 4px;
   max-width: 264px;
 }
@@ -351,7 +360,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   color: var(--title-text-color);
-  background-color:#F4F4FD ;
+  background-color:var(--accent-color) ;
   
 }
 
@@ -384,15 +393,14 @@ ul {
 }
 
 .icon-social{
-  fill: #FFFFFF;
+  fill: var(--white-color);
 }
 
 .photo-team{
   width: 264px;
   background:var(--white-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  
+  box-shadow: var(--box-shadow-te);
 }
 
 .section-team .section-title{
@@ -454,7 +462,7 @@ ul {
   padding-bottom: 100px;
   box-sizing: border-box;
   background:var(--primary-text-color);
-  border: 1px solid #000000;
+  border: 1px solid var(--primary-text-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   margin:0 auto;
 }
@@ -487,7 +495,7 @@ ul {
   margin-bottom: 16px;
   line-height: 1.05;
   letter-spacing: 0.02em;
-  color: #E7E9FC;
+  color:var(--footer-color);
 }
 
 .footer-media{
@@ -548,7 +556,7 @@ ul {
   display: flex;
   flex-direction: row;
   background:var(--accent-color);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-color);
   border-radius: 4px;
   color: var(--logo-color);
   font-style: normal;
@@ -565,7 +573,7 @@ ul {
   text-decoration-color: var(--logo-color); 
   border-color:var(--primary-text-color);
   background-color:var(--logo-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:var(--box-shadow-te);
   }
 
   .project{
@@ -576,18 +584,17 @@ ul {
 
   }
 
-  .project-link{
-    text-decoration: none;
-    color: var(--title-text-color);
-    outline: transparent;
-    display: block;
-
-  }
+.project-link{
+  text-decoration: none;
+  color: var(--title-text-color);
+  outline: transparent;
+  display: block;
+}
 
 
 .project-link:focus,
 .project-link:hover{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: var(--box-shadow-te);
 
 }
 
@@ -605,9 +612,9 @@ width: 360px;
   }
 
   .portfolio-frame{
-    border-bottom: 1px solid #E7E9FC;
-    border-left:  1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--footer-color);
+    border-left:  1px solid var(--footer-color);
+    border-right: 1px solid var(--footer-color);
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
