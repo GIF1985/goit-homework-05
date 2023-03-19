@@ -578,10 +578,9 @@ ul {
 
   .project{
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
-
+    flex-wrap: wrap;  /* многострочную расстановку блоков по главной оси */
+    row-gap: 48px;    /*  устанавливает интервал между рядами */
+    column-gap: 24px; /* промежуток интервал между колонками */
   }
 
 .project-link{
