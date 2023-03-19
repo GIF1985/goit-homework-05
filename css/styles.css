@@ -211,13 +211,12 @@ ul {
 
  /**
    |============================
-   | section 
+   | section advantages
    |============================
  */
-
-  .smart{
-    padding-bottom: 120px;
-  }
+.smart{
+  padding-bottom: 120px;
+}
 
 .advantages{
   display: flex;
@@ -319,38 +318,42 @@ ul {
   margin-right: 0;
 }
 
+/**
+  |============================
+  | c
+  |============================
+*/
 
-
-.tim, 
-.item .photo-tim {
+.team, 
+.item .photo-team{
   display: flex;
   text-align: center;
 }
 
-.tim .item{
+.team .item{
   margin-right: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   max-width: 264px;
 }
 
-.tim .item:last-child{
+.team .item:last-child{
   margin-right: 0;
 }
 
-.tim .tim-box{
+.team .team-box{
   padding: 32px 16px 32px 16px;
 }
 
-.section-tim{
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--title-text-color);
-    background-color:#F4F4FD ;
+.section-team{
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--title-text-color);
+  background-color:#F4F4FD ;
   
 }
 
-.tim-icon{
+.team-icon{
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -358,7 +361,7 @@ ul {
 
 }
 
-.tim-link{
+.team-link{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,8 +371,8 @@ ul {
   border-radius: 50%;
 }
 
-.tim-link:hover,
-.tim-link:focus{
+.team-link:hover,
+.team-link:focus{
   background-color: var(--зressed-ocean);
 }
 
@@ -382,7 +385,7 @@ ul {
   fill: #FFFFFF;
 }
 
-.photo-tim {
+.photo-team{
   width: 264px;
   background:var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -390,9 +393,7 @@ ul {
   
 }
 
-
-
-.section-tim .section-title{
+.section-team .section-title{
   margin-bottom: 72px;
 }
 
@@ -401,8 +402,7 @@ ul {
   padding-top: 92px;
 }
 
-.customers-link
-{
+.customers-link{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,7 +412,6 @@ ul {
   border-radius: 4px;
   outline: transparent;
   fill:var(--light-silvr-color);
-
 }
 
 .customers-link:hover,
@@ -425,7 +424,6 @@ ul {
 
 .customers-item{
   display: flex;
-  
 }
 
 
@@ -444,7 +442,6 @@ ul {
   font-size: 18px;
   line-height: 1.33;
   text-decoration: none;
-
   margin-bottom: 16px;
 }
 
