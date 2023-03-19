@@ -214,9 +214,7 @@ ul {
    | section advantages
    |============================
  */
-.smart{
-  padding-bottom: 120px;
-}
+
 
 .advantages{
   display: flex;
@@ -243,19 +241,26 @@ ul {
     margin-bottom: 8px;
   }
 
+/**
+  |============================
+  | section smart
+  |============================
+*/
+
+  .smart{
+    padding-bottom: 120px;
+  }
   
- .section-title{
+.section-title{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     color: var(--primary-text-color);
-
-  }
+}
 
   
- 
 .section-subtitle{
   margin-top: 0px;
   margin-bottom: 0;
@@ -298,16 +303,13 @@ ul {
   max-width: 100%;
   height: auto;
   width: 360px;
-  
 }
 
 .technique{
   display: flex;
   align-items: center;
   justify-content: space-between; 
-
   margin-top: 72px;
-  
 }
 
 .technique .item{
@@ -320,7 +322,7 @@ ul {
 
 /**
   |============================
-  | c
+  | section team
   |============================
 */
 
@@ -397,6 +399,13 @@ ul {
   margin-bottom: 72px;
 }
 
+
+/**
+  |============================
+  | section customers
+  |============================
+*/
+
 .customers{
   padding-bottom: 120px;
   padding-top: 92px;
@@ -434,17 +443,11 @@ ul {
 }
 
 
-.logo1 {
-  color: var(--white-color);
-  text-transform: uppercase;
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  text-decoration: none;
-  margin-bottom: 16px;
-}
-
+/**
+  |============================
+  | footer
+  |============================
+*/
 
 .footer{
   padding-top: 100px;
@@ -469,6 +472,16 @@ ul {
   margin-right: 0;
 }
 
+.logo1 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
 
 .footer-text{
   margin-bottom: 16px;
@@ -483,8 +496,6 @@ ul {
   font-size: 16px;
   margin-bottom: 16px;
 }
-
-
 
 .footer-list{
   display: flex;
@@ -510,6 +521,12 @@ ul {
 }
 
 
+/**
+  |============================
+  | portfolio
+  |============================
+*/
+
 .portfolio{
   padding-bottom: 120px;
   padding-top: 96px;
@@ -519,15 +536,11 @@ ul {
   display: flex;
   margin-bottom: 72px;
   justify-content: center;
-  
-  
 }
 
 .inner .item{
   margin-right: 24px;
 }
-
-
 
 
 .button-filter {
@@ -570,18 +583,18 @@ ul {
     display: block;
 
   }
-  .project-link:focus,
-  .project-link:hover{
+
+
+.project-link:focus,
+.project-link:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
-  }
+}
 
-   .project-photo{
-    width: 360px;
+.project-photo{
+width: 360px;
     
-     }
-
-
+}
 
   .project .item{
     display: block;
@@ -591,21 +604,15 @@ ul {
 
   }
 
-
-
-
   .portfolio-frame{
     border-bottom: 1px solid #E7E9FC;
     border-left:  1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
-
-    /* margin-bottom: 48px; */
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
-
   }
+
   .picture-indent{
     vertical-align:bottom;
-    
   }
