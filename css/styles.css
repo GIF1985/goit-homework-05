@@ -1,12 +1,8 @@
-/* цвет меню текаста , h2, банеера и подвала #2E2F42; */
-/* цвет адреса, текста серый, #434455; */
-/* вторичный цвет фона #F4F4FD */
-/* лого Веб и кнопки синий #4D5AE5; */
-/* цвет h1 белый #FFFFFF;  */
-/* в подвале текст #E7E9FC; */
-
-
-/* сделал палитру цветов - использывать через var */
+/**
+  |================================================
+  |  палитра цветов - использывать через var
+  |=================================================
+*/
 :root{
   --primary-text-color:#2e2f42;
   --title-text-color:#434455;
@@ -15,78 +11,14 @@
   --white-color:#FFFFFF;
   --footer-color:#E7E9FC;
   --зressed-ocean:#404BBF;
---light-silvr-color:#8E8F99;
-  
+  --light-silvr-color:#8E8F99;
 }
 
-.page-header{
-  
-  background-color: var(--white-color);
-  border-bottom: 1px solid #E7E9FC ;
-
-
-}
-
-.container{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
-  
-  
-  /* outline: 2px solid red; */
-
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-body {
-  background-color: var(--white-color);
-  color: var(--primary-text-color);
-  font-family:'Roboto';
-  font-size: 16px;
-}
-
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0%;
-  list-style: none; /* оформление свойство ul без класа отменили */
-}
-
-/* Header Menu */
-.menu-nav,
-.menu-nav nav {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-}
-
-/* лого 2-я часть */
-.logo {
-  text-transform: uppercase;
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--primary-text-color);
-
-  /* margin-left: 156px; */
-  margin-right: 72px;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-/*лого 1 часть */
-.web{
-  color:var(--logo-color) ;
-}
-
-
-/* сделали невидимым текст класа*/
+/**
+  |===========================================
+  | делаем невидимым текст например имя секции 
+  |===========================================
+*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -100,79 +32,136 @@ ul {
   overflow: hidden;
 }
 
-/* menu */
-.menu{
-  display: flex;
+.container{
+  margin-left: auto;  /* устанавливает внешний отступ */
+  margin-right: auto; /* устанавливает внешний отступ */
+  width: 1158px;
+  /* outline: 2px solid red; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.menu .item {
-  margin-right: 40px;
-}
-
-.menu .item:last-child{
-  margin: 0;
-}
-
-.menu-link {
+body {
+  background-color: var(--white-color);
   color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  font-family:'Roboto';
+  font-size: 16px;
+}
 
-  display: block;  
+
+ul {
+  padding: 0; /* устанавливает внутренние отступы/поля со всех сторон */
+  margin: 0%;
+  list-style: none; /* оформление ul отменил */
+}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+.page-header{
+  background-color: var(--white-color);
+  border-bottom: 1px solid #E7E9FC ;
+}
+
+
+.logo {
+  text-transform: uppercase; /* делаем все буквы текста ссылок заглавными.*/
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  margin-right: 72px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.menu-link:hover,.menu-link:focus{
-color:var(--logo-color);
+
+.web{
+  color:var(--logo-color) ;
 }
 
-.techno{
-  max-width: 264px;
+.menu-nav,
+.menu-nav nav {
+  display: flex; /* делает все дочерние элементы резиновыми - выставляем все элементы по горизонтали*/
+  justify-content: space-between; /* чтобы прижать их к противоположным краям родителя*/
+  align-items: center; /* задает выравнивание элементов по центру*/
 }
+
+  .menu{
+    display: flex;
+  }
+  
+  .menu .item {
+    margin-right: 40px;
+  }
+  
+  .menu .item:last-child{
+    margin: 0;
+  }
+  
+  .menu-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;  
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .menu-link:hover,.menu-link:focus{
+  color:var(--logo-color);
+  }
+  
+  .techno{
+    max-width: 264px;
+  }
+
 .menu-current {
   color:var(--logo-color);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
+  
 .current:focus{
   color:var(--logo-color);
-  }
-
-
+}
+  
   .address {
     display: flex;
-   }
-
+  }
+  
   .address-herf{
-      margin-right: 40px;
-   }
-
-
+     margin-right: 40px;
+  }
+  
+  
   .address a{
     color: var(--title-text-color);
     text-decoration: none;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-    
-  }
+   }
+
   .address a:hover,.address a:focus{
     color:var(--logo-color);
-    }
-    
+  }
+
+
 
 
  /* hero */
