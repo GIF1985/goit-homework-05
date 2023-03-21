@@ -793,8 +793,8 @@ display: flex;
 padding: 8px;
 
 transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -802,7 +802,7 @@ transition-property: color, background-color, box-shadow;
 .modal-btn:hover,
 .modal-btn:hover{
   background: var(--зressed-ocean);
-  
+  fill: #FFFFFF;
 }
 
 
